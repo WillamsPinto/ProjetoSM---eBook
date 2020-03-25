@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+
+#livrosVistos{
+    padding-top: 20px;
+}
+
+div#interface{
+    background-color: #dddddd;
+}
+
+
+
+/* Rodape */
+footer#rodape{
+    margin-top: 10px;
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p{
+    text-align: center;
+}
