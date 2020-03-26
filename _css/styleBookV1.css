@@ -1,0 +1,454 @@
+@charset "UTF-8";
+
+body{
+    background: url(../images/background.jpg) no-repeat fixed center top;
+}
+
+header#sumario{
+    border: 8px solid gray;  
+    margin-left: 2px;
+    width:20%;
+    background: #dddddd;
+    position: absolute;
+    left:0;
+    top:20%;
+    z-index: 5;
+}
+
+header#sumario h1{
+    text-align: center;
+}
+nav ul{
+    list-style:none;
+    margin:5px 0;
+    padding:0;
+}
+nav a{
+    display:block;
+    border:1px solid #e5e5e5;
+    border-left:0;
+    border-right:0;
+    margin:3px 0;
+    color:#333;
+    padding:5px 0;
+    text-decoration: none;
+}
+
+ol {
+    list-style-type: none;
+}
+.box{
+    position:absolute;
+    top:5%;
+    right:10px;
+    width:70%;
+    height:70%;
+    background: #ffffff;;
+}
+.box h2{
+    font-size:20px;
+    padding:10px;
+}
+.box p{
+    font-size:12px;
+    padding:10px;
+}
+.content{
+    background-color: #ffffff;
+    min-width: 100%;
+    height: 200%;
+    position: absolute;
+    margin-left:-101%;
+    -webkit-transition: margin-left .8s ease-in-out;
+    -moz-transition: margin-left .8s ease-in-out;
+    -o-transition: margin-left .8s ease-in-out;
+    transition: margin-left .8s ease-in-out;
+}
+.content:target{
+    margin-left:0;
+}
+#home{
+    margin-left:0;
+}
+#home:target ~ header #link-unidade a,
+#company:target ~ header #link-fracao a,
+#service:target ~ header #link-service a,
+#contact:target ~ header #link-contact a{
+    background: #333;
+    color: #fff;
+}
+
+/*Parte antiga*/
+div#rodape{
+ 
+    background-color: #dddddd;
+    position: absolute;
+    width: 100%;
+    margin: 90% auto 0px auto;
+}
+
+hgroup#infoUnidade{
+    background-color: #dddddd;
+    margin:50px auto 50px auto;
+}
+
+section#corpo p{
+    text-align: justify;
+    font-size: 12pt;
+    padding: 10px 10px 10px 10px;
+}
+
+section#corpo h1{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    padding: 10px 10px 10px 10px;
+}
+
+section#corpo h1,h4,h5,h6{
+
+    padding: 10px 10px 10px 10px;
+    background-color: #dddddd;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .4);
+}
+/*Figures*/
+figure.exemplos-fracao-legenda img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.exemplos-fracao-legenda{
+    position: relative;
+    border: 8px solid white;  
+}
+
+figure.exemplos-fracao-legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.exemplos-fracao-legenda:hover figcaption{
+    opacity: 1;
+}
+
+/*-------------------2-----------------*/
+figure.gif-pizza-legenda{
+    position: relative;
+    border: 8px solid white;  
+}
+
+figure.gif-pizza-legenda img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+figure.gif-pizza-legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.gif-pizza-legenda:hover figcaption{
+    opacity: 1;
+}
+
+/*-------------------3-----------------*/
+figure.exemploFracaoEscritaLegenda img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 40%;
+}
+
+figure.exemploFracaoEscritaLegenda{
+    position: relative;
+    border: 8px solid white;  
+}
+
+figure.exemploFracaoEscritaLegenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.exemploFracaoEscritaLegenda:hover figcaption{
+    opacity: 1;
+}
+
+
+figure.exemploFracaoVisualLegenda img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 40%;
+}
+
+figure.exemploFracaoVisualLegenda{
+    position: relative;
+    border: 8px solid white;  
+}
+
+/*-------------------Operações-----------------*/
+figure.somaFracaoLegenda img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 40%;
+}
+
+figure.somaFracaoLegenda{
+    position: relative;
+    border: 8px solid white;  
+}
+
+figure.divisaoFracaoLegenda img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 40%;
+}
+
+figure.divisaoFracaoLegenda{
+    position: relative;
+    border: 8px solid white;  
+}
+
+figure.multiplicacaoFracaoLegenda img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 40%;
+}
+
+figure.multiplicacaoFracaoLegenda{
+    position: relative;
+    border: 8px solid white;  
+}
+
+figure.multiplicacaoFracaoLegenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.multiplicacaoFracaoLegenda:hover figcaption{
+    opacity: 1;
+}
+
+/*-------------------Mista-----------------*/
+figure.exemplosFracaoMista1Legenda img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.exemplosFracaoMista1Legenda{
+    position: relative;
+    border: 8px solid white;  
+}
+
+figure.exemplosFracaoMista1Legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.exemplosFracaoMista1Legenda:hover figcaption{
+    opacity: 1;
+}
+
+figure.exemplosFracaoMista2Legenda img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.exemplosFracaoMista2Legenda{
+    position: relative;
+    border: 8px solid white;  
+}
+
+figure.exemplosFracaoMista2Legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.exemplosFracaoMista2Legenda:hover figcaption{
+    opacity: 1;
+}
+
+figure.exemploFracaoEequivalente img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.fracaoEquivalente img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.fracaoCompostaLegenda img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.fracaoImpropria img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.exemploFracaoMista2 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.fracaoMista2 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.fracaomista img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.simplificacaoFracao img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.comparacaoFracao img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.comparacaoFracaoDenoDiferente1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+figure.comparacaoFracaoDenoDiferente2 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+figure.potenciacao img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+}
+
+figure.potenciacao{
+    position: relative;
+    border: 8px solid white;  
+}
+
+figure.potenciacao figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.potenciacao:hover figcaption{
+    opacity: 1;
+}
+
+
+figure.radiacaoNotacao img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 20%;
+}
+
+figure.raizindecepar img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.radiacao img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure. img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
